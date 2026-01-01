@@ -1,0 +1,9 @@
+r = int(input())
+c = int(input())
+
+A = [[int(input()) for _ in range(c)] for _ in range(r)]
+B = [[int(input()) for _ in range(c)] for _ in range(r)]
+
+result = [[A[i][j] + B[i][j] for j in range(c)] for i in range(r)]
+
+print(result)
