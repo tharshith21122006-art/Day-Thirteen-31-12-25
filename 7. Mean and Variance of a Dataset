@@ -1,0 +1,6 @@
+data = list(map(int, input().split()))
+mean = sum(data) / len(data)
+variance = sum((x - mean) ** 2 for x in data) / len(data)
+
+print("Mean =", mean)
+print("Variance =", variance)
