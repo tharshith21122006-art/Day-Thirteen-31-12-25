@@ -1,0 +1,16 @@
+s = input()
+stack = []
+
+for ch in s:
+    if ch == '(':
+        stack.append(ch)
+    elif ch == ')':
+        if not stack:
+            print("Not Balanced")
+            break
+        stack.pop()
+else:
+    if not stack:
+        print("Balanced")
+    else:
+        print("Not Balanced")
